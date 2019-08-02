@@ -1,0 +1,39 @@
+/*
+ ============================================================================
+ Name        : Passenger.h
+ Author      : James Giroux - jgiroux1@myseneca.ca
+ Student #   : 129198164
+ Section     : SEE
+ Date        : June 5, 2019
+ ============================================================================
+ */
+
+/*
+ ============================================================================
+ Description : Workshop 4 reflection and quiz 4 reflection
+ ============================================================================
+ */
+
+1) A safe empty state is performed by the constructor and sets the member variables to values that identify the object as empty.  We can use this as a check because the values in the members will not be 'Garbage'.  This helps us with the logic in other functions.  I chose to define all member values to 0 or empty strings, but this could be done by only setting one member to 0 or '\0'(empty string).  In retrospect maybe that would have been the better option because to check if the object is in a safe empty state, we would only have to check one variable.
+
+2) I created two extra functions, one being a member function and one to validate the date value.  I felt that this made the code easier to read and made it easier to maintain.
+
+3) C++ allows us to access the private member of the parameter passed because it is a reference to the same object type.
+
+4) I included the max_size constant to make sure that I did not have more characters than were statically allocated for those variable and then added the null terminator to the end of the string:
+
+strncpy(m_name, name, max_length);
+m_name[max_length] = '\0';
+
+5) I have learned about constructors and destructors, and how to overload constructors. I have re-enforced my ability to limit the duplication of code by declaring a function that can be reused.  And ensuring that by checking for an empty state the client will not crash.
+
+---------------------------- quiz 4 Reflection ---------------------------
+
+1) Explain a free helper function
+- a free helper function is a global function that does not have access to the private members pf a class.
+
+2) Based on the number of operands C++ operators can be classified into three categories name them and give examples of each
+- unary -> One operand, post fix and prefix operators and plus and minus Eg. +, -, ++, --.
+- Binary -> Two operands, assignment, math, relational, and logical Eg. =, +=, -=, *, /, +, -.
+- Ternary -> Conditional operator Eg. x > y ? true : false;
+

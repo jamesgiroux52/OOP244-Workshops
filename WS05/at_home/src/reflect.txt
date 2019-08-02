@@ -1,0 +1,34 @@
+/*
+ ============================================================================
+ Name        : reflect.txt
+ Author      : James Giroux - jgiroux1@myseneca.ca
+ Student #   : 129198164
+ Section     : SEE
+ Date        : June 15, 2019
+ ============================================================================
+ */
+
+/*
+ ============================================================================
+ Description : Workshop 5 & Quiz 5 Reflection's 
+ ============================================================================
+ */
+ 
+ 
+1) The operator+ cannot return a reference because it will return a new object, whereas the operator+= only needs a reference to do its job.  Also, the + operator has no implicit parameter whereas the += operator does have an implicit parameter.
+ 
+2) Line 61 (a + b).display(), line 65 (b + d).display(), and line 69 (b += d).display().
+ 
+3) The simplifications I made were to implement a setEmpty() function which is used several times in other functions.
+
+4) In this workshop the main thing that I learned was how to correctly implement overloaded operators, the syntax for doing so, and when to use references as opposed to returning by value.  I have to say I just wrote the midterm and I find writing code on paper much more difficult that in an IDE.  I understand why this is necessary and enjoy the challenge, but I hate realizing afterward that I made mistakes because I didn't have the support of the IDE.  That said I hope that there is at least part marks for the errors that I did make on the midterm.  IPC midterm was a breeze compared to that.
+
+---------------------  Quiz 5 reflection -----------------------
+
+1, and 3, were correct
+
+2) the difference between a deep and shallow copy is:
+my understanding of the difference is that a shallow copy is related to member variables that do not require dynamic memory, and we can just set the value to whatever we need for example (m_num = 0), were as a deep copy has to do with setting member variables that need dynamic memory to be allocated for example:
+m_name = new char [21];
+strncpy(m_name, name, 20);
+

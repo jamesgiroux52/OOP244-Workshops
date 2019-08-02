@@ -1,0 +1,33 @@
+/*
+ ============================================================================
+ Name        : reflect.txt
+ Author      : James Giroux - jgiroux1@myseneca.ca
+ Student #   : 129198164
+ Section     : SEE
+ Date        : May 29, 2019
+ ============================================================================
+ */
+
+/*
+ ============================================================================
+ Description : Workshop 3 - Reflection
+ ============================================================================
+ */
+
+
+1) The difference between a null string and an empty string is that the empty string will always have the null terminator ('\0'), where as a null string has no value at all even though it still has a place in memory.
+
+2) The feature of C++ that allows us to use duplicate function names is called overloading, the compiler differentiates these functions based on their signature.
+
+3) If the validation logic for a SIN number changes and we don't want to have to change the set() function we would need to have a separate Boolean function to validate the SIN.  I realized this while writing the logic and created one called 'validSin(int sin)'.  This helps keep your code clean and makes it easier to read.
+
+4) The biggest thing that I learned while completing this workshop was the logic behind validating a Social Insurance Number.  I also learned the difference between #define macros and constants.  For the purposes of this workshop when I tried to use the directive it caused problems in main() I couldn't use them the way the code was written (eg sict::max_length).  I also became a lot more comfortable with classes and member functions such as set, display, isEmpty, and my SIN validation member function.  I think I had a good grasp on overloading functions, but this workshop helped to reinforce the logic behind overloading.  I'm really enjoying C++ and am looking forward to writing some constructors and destructors in ws4.
+
+---------------------  Quiz 3 Reflection  ----------------------
+
+Answered questions 1 and 3 correctly.
+
+2) Explain what an implicit parameter is:
+
+The implicit parameter is the defined object's instance name, for example obj.function(int number). In this example the implicit parameter is 'obj' and the explicit parameter is 'number'.  Therefore, a call to a member function will only receive one implicit parameter but can have zero or many explicit parameters.  Therefore, the implicit parameter references the classes member variables for that instance (ie obj), whereas the explicit parameters reference the client code or variables.
+

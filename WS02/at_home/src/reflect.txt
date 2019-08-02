@@ -1,0 +1,40 @@
+/*
+ ============================================================================
+ Name        : reflect.txt
+ Author      : James Giroux - jgiroux1@myseneca.ca
+ Student #   : 129198164
+ Section     : SEE
+ Date        : May 23, 2019
+ ============================================================================
+ */
+
+/*
+ ============================================================================
+ Description : Workshop 2 - at_home reflection
+ ============================================================================
+ */
+ 
+1) Why do you need to allocate new dynamic memory when you increase the size of an existing array of dynamically allocated memory?
+- For the first array we allocate a certain amount of memory.  If we need to adjust the size of the array we need to use a different pointer variable because if we tried to use the same variable name and just make it bigger we would lose the original data stored in that array. 
+
+2) The Kingdom structure stores the name of the kingdom in an array of characters. At the end of the program, we do not use the delete operator to deallocate the memory occupied by the name itself. Why don’t we need to use the delete operator on this array itself?
+- The name member does not need to be deleted because it is static and a member of the Kingdom structure, so when we deallocate the memory pointing to that structure 
+
+3) There are two display(...) function definitions. How does the compiler know which definition to call from your main function?
+- The compiler looks at the signature of the function (ie the functions identifier/name, parameter types, and the order of parameters) in order to decide which function to use when called.
+
+4) Describe what have you have learned in this workshop.
+- In this workshop we learned about using dynamic memory.  For the at home portion of the workshop we had to add an extra element to a dynamically allocated array.  In order to do this, I had to declare a new object with the increased size and then copy the values from the original array into the new array that has the extra space.  At that point we can deallocate the original memory and then set it to the newly created array.  I also learned more about block scopes and their advantages, for example, any data created within the block will not persist after the block ends.  This is another good way to manage memory.  I can also say that I am getting a better understanding of C++ syntax and new keywords that are essential in C++ programming.
+
+-------------------  Quiz 2 Reflection -------------------------
+
+1) The three stages of compilation:
+- preprocessing - this part of compilation interprets all directives and all of the #include and #define statements are processed.
+- compiling - compiles all code and modules into their related binary files
+- linkage - combines all binary files into a single executable
+
+2) public and private labels:
+- I got this right I called members objects, and now understand that the object is the structure itself and its data elements are the members.
+
+3) I got this right as well 
+- the difference between a struct and class is that by default a struct is public and a class is private.

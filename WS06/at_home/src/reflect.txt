@@ -1,0 +1,26 @@
+/*
+ ============================================================================
+ Name        : reflect.txt
+ Author      : James Giroux - jgiroux1@myseneca.ca
+ Student #   : 129198164
+ Section     : SEE
+ Date        : July 5, 2019
+ ============================================================================
+ */
+
+/*
+ ============================================================================
+ Description : reflection workshop 6 and quiz 6
+ ============================================================================
+ */
+
+ 
+ 1) the copy assignment operator has to check for self-assignment because if we don't then we can potentially lose data from the current object.
+ 
+ 2) I used the compare function to avoid code duplication, I could have implemented a set empty function as well but didn't feel it was necessary in this design.  I may still implement this in future milestones.
+ 
+I really enjoyed understaning the I/O helper functions and gaining a better understanding of overloaded operators and helper functions.
+ 
+ ---------------  quiz 6 reflection  --------------------
+ 
+ 2) the difference between private public and protected members is private bars all access, protected limits access to only derived classes and public grants un-restricted 

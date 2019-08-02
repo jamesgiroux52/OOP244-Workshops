@@ -1,0 +1,45 @@
+/*
+ ============================================================================
+ Name        : reflect.txt
+ Author      : James Giroux - jgiroux1@myseneca.ca
+ Student #   : 129198164
+ Section     : SEE
+ Date        : May 16th, 2019 - Workshop 1 - Home Reflection
+ ============================================================================
+ */
+
+/*
+ ============================================================================
+ Description : Reflection - Workshop 1
+ ============================================================================
+ */
+ 
+Considering that our final project from IPC was implemented with several modules and header files, I found this workshop quite easy.  The only new aspect I had to deal with was namespaces.  I am using eclipse so when I create a header file it automatically inserts the header guards, so even this was not new for me.
+ 
+By making your program modular you gain advantages over having one huge file, including cleaner code for ease of maintainability and readability, as well as reusability.  I also helps you hide the logic of your functions from the main cpp file, kind of like the library functions we have been using up to this point in the program (ie. printf scanf cin cout).  In addition to making the program modular, I have started to use and learn namespaces.  Namespaces are a valuable tool when working in teams.  If several programmers are working on the same project, they may end up using the same variable names.  By using namespaces, we can eliminate conflicts in variable names because each namespace has its own scope and can be referenced independently.
+ 
+Header files should not be compiled because they will always be included in the associated module (ie cpp file).  Therefore, they will always be added to the compilation when the modules get compiled.
+ 
+Modules (ie cpp files) should never be included in other files, they should only be compiled.  If we have proper header guards and those header files are included in the main.cpp file and any other file that needs to access the functions specific to that header file, then there should be no need to include them in any other file.  The idea is that you write all your function prototypes in the header files and all the supporting code in the module associated with that header file (ie same name with different extension). 
+
+In this workshop I learned about namespaces, and the differences with the I/O functions between C and C++.  I also learned that the cin object has several functions built into it.  This is due to the getInt function.  We had to write a similar function in C for the final project and it seems much easier in C++ cin.fail() will return true if the input does not match the variable type.  And I assume that cin.clear() will clear the input buffer.  There is also some interesting math going on when the user has entered values greater than 70 in order to keep the graph within screen bounds.  
+
+If you have a minute, I am curious what you think of this … There is some cool math in here. https://github.com/jru5252/Upgraded_diamond_shape_with_resizable_border/tree/master/hollowDiamond/src
+
+-------------------  Quiz 1 Reflection -------------------------
+
+I am really disappointed in myself with the mark I received on quiz 1 (3/10).  I had a really rough first week of school.  I was having a lot of trouble sleeping and adjusting to a new medication.  That being said, I didn’t get a chance to study and look through the OOP site notes to get a grasp on the definitions. That said, I understand these concepts now and would get 10/10 if re-written.
+
+1)What are the three aspects of an object-oriented language:
+Encapsulation - Being able to include data (ie variables) and logic (ie functions) into classes.
+Inheritance - answered correctly
+Polymorphism - To be honest I am still a little confused on this aspect of OOP.  To the best of my understanding it involves different results from the same logic based upon the type of the object passed to that logic... its a little confusing to me.
+
+2)Memory leak - From the lab today I understand this as when the programmer does not release dynamic memory after they are finished using it.  Also known as a silent bug because these errors are hard to diagnose.  They also cause the application to "leak memory" and will eventually cause a crash because the system will run out of memory if the app is kept running for extended amounts of time.  This error happens when either a pointier to dynamic memory looses scope before it is deallocated, or the pointer receives another value before being deallocated.
+
+3)Referencing - Is the process of creating an alias to a previously declared variable.  These references are useful for passing variables to functions.  They are like a compromise between passing by value and using pointers.  Passing a referenced variable will allow the function to modify the value of the referenced variable for use in the caller once the function has been run.
+
+P.S.
+Please let me know if you would prefer a reflect.txt that does not need word wrapping to view.  I use Brackets to create this file. 
+
+James

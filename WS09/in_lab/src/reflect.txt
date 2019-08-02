@@ -1,0 +1,34 @@
+/*
+ ============================================================================
+ Name        : reflect.txt
+ Author      : James Giroux - jgiroux1@myseneca.ca
+ Student #   : 129198164
+ Section     : SEE
+ Date        : July 20, 2019
+ ============================================================================
+ */
+
+/*
+ ============================================================================
+ Description : Week 9 Reflection
+ ============================================================================
+ */
+
+ 
+1.	What happens if you try to put your templated functions in Data.cpp? Does your source code compile if you move all functions to Data.h? Explain.
+
+Templated functions need to be placed in the header file or at compile time you will get a "definition not fund" error.
+
+2.	Move one templated function into ws9_lab.cpp. Does it work now? Do you need to define the template function above main(), before it is used, or can you define it below main()?
+
+Template declarations are only permitted in global, namespace, or class scope.
+
+3.	Could you have done this lab without templates, by just overloading your functions in Data.h to accept integer and double arguments? What is the advantage of using templates?
+ 
+You could, but you would be duplicating a lot of code, and that is the advantage of using template functions.
+
+4.	Are the following equivalent? 
+template<class T> 
+template<typename T> 
+
+They are not the same, they have different data types. Typename will accept any data type and class will accept an object I assume.

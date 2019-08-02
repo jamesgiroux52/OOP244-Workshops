@@ -1,0 +1,36 @@
+/*
+ ============================================================================
+ Name        : reflect.txt
+ Author      : James Giroux - jgiroux1@myseneca.ca
+ Student #   : 129198164
+ Section     : SEE
+ Date        : July 15, 2019
+ ============================================================================
+ */
+
+/*
+ ============================================================================
+ Description : reflection for ws7 and quiz 7
+ ============================================================================
+ */
+
+ 
+1,2) The Hero class does not need to know about the existence of the SuperHero class, the SuperHero class does need to know about the Hero class because it is inheriting the members and logic.
+
+3) The program prints out "Super Fight!" when a hero fights a superhero because the superhero does not use their power when fighting a hero.
+
+4) True.  This is valid because but the heroes are created as objects and then the fight would give a result because of the * overload.
+
+5) False.  You would have to separate the battles, I'm not entirely sure why this does not work but it did not when I tried it.
+
+I am finding C++ very engaging and love learning this complex object-oriented language.  All the coding I have done in the past was a lot simpler.  For example, VisualBasic (2001), Turing in high school, and some other "learning" languages.  It has taken me a lot of effort and debugging to understand what is going on in these modules.  The header files are quite easy and don't take much effort.  I found that learning the syntax when writing the SuperHero module was what gave me the most trouble and I had to consult the notes and some online sources to fully grasp it.
+
+------------------  Quiz 7 Reflection  -------------------
+I missed this quiz.
+
+1) The difference between an abstract class and an interface is an interface is a base class that contains no data members and an abstract class is a class that inherits a virtual function. 
+
+2) an example of a pure virtual function would be:
+virtual void display(std::ostream&) const = 0;
+
+I have to admit that polymorphism is confusing me, I really wish I didn’t miss that lecture. I am a little lost when it comes to this, I think I am going to get a tutor and feel like I may struggle with the next workshop.  We will see I guess.

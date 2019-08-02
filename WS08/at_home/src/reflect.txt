@@ -1,0 +1,37 @@
+/*
+ ============================================================================
+ Name        : reflect.txt
+ Author      : James Giroux - jgiroux1@myseneca.ca
+ Student #   : 129198164
+ Section     : SEE
+ Date        : July 18, 2019
+ ============================================================================
+ */
+
+/*
+ ============================================================================
+ Description : Reflection of WS8 and Quiz 8 & 9
+ ============================================================================
+ */
+
+ 
+ 1)	What is the difference between an abstract base class and a concrete class?
+An abstract base class (iAccount.h) has no implementation module associated with it where as a concrete class will always have a module associated with it (ie. cpp file)
+
+2)	Identify the functions that shadow functions of the same name in your solution?
+void display(std::ostream&) const;
+
+3)	Explain what have you learned in this workshop.
+I have learned how virtual functions can be accessed by parent classes, I learned about abstract base classes and the differences between them and concrete classes.
+
+---------------------  Quiz 8 Reflection  ---------------------------
+
+Explain the four types of Polymorphism
+
+Ad-Hoc:
+	-Coercion: Enables a call to a function with mismatched types.  When a function gets called with incorrect typed parameters the compiler will either narrow or promote the value sent. Narrowing for example if a precision number was sent to an integer parameter it would lose it's decimal places and be cast to an int. Promotion, for example if a character is sent into an integer parameter it would promote it to the ASCII value.
+	-Overloading: Being able to use the same function name but with a different signature ie. number and type of arguments or return type. At compile time the compiler will choose which function to use based on these factors.
+
+Universal:
+	-Inclusion: Refers to being able to use a function throughout a class hierarchy without duplicating code.  This is done when we are using virtual functions and inheritance.
+	-Parametric or generic: Relates to when we are using templates.  When the logic is the same regardless of type, we can use a template pointer parameter to pass any type into the function.
